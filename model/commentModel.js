@@ -3,7 +3,7 @@ const commentSchema = new mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'Users',
+      ref: 'users',
       required: true,
     },
     postId: {
@@ -14,7 +14,6 @@ const commentSchema = new mongoose.Schema(
     text: {
       type: String,
       required: true,
-      trim: true,
     },
     createdAt: {
       type: Date,

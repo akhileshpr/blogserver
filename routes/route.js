@@ -23,5 +23,6 @@ router.get('/single-post/:postId',blogController.getSinglePost);
 
 // Comment
 router.post('/add-comment/:postId/:userId',jwtMiddleWare,commentController.createComment);
+router.get('/get-comment/:postId',commentController.getComments);
 
 module.exports = router
